@@ -73,8 +73,7 @@ function update() {
   } else if (y <= 5) {
     y = 5;
   }
-	angle.x = Math.atan2(mouse.x);
-	angle.y = Math.atan2(mouse.y);
+	
   ctx.clearRect(0, 0, 300, 300)
 	ctx.beginPath()
 	ctx.arc(x, y, 15, 0, Math.PI * 2);
