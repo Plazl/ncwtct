@@ -25,8 +25,8 @@ function resize() {
     resize()
 ctx.translate(canvas.height/2,canvas.width/2)
 
-var x = 150,
-  y = 150,
+var x = 0,
+  y = 0,
   velY = 0,
   velX = 0,
   speed = 5,
@@ -76,8 +76,8 @@ function update() {
 	
   ctx.clearRect(0, 0, 300, 300)
 	ctx.beginPath()
-	ctx.arc(x, y, 15, 0, Math.PI * 2);
-  ctx.rect(x, y - 7.5, 30, 15)
+	ctx.arc(x, y, 5, 0, Math.PI * 2);
+  ctx.rect(x, y - 7.5, 10, 5)
   ctx.stroke()
   ctx.fill()
 	
